@@ -1,0 +1,11 @@
+<img src="<%= @record.cover_art %>">
+<br>
+<h1><%= @record.title %></h1>
+<h2>by <%= @record.artist %></h2>
+<p>Year: <%= @record.year %></p>
+<p>Song Count: <%= @record.song_count %></p>
+<%= link_to "Back", records_path %>
+<%= button_to "Delete", @record, method: :delete %>
+<!-- DO THIS -->
+<%= link_to "Edit", edit_records_path(@record) %>
+<!-- END -->

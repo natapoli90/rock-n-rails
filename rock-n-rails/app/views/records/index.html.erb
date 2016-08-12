@@ -1,0 +1,7 @@
+<h1>Rock 'n Rails!</h1>
+<% @records.each do |record| %>
+  <p>Title: <%= record.title %></p>
+  <p>Artist: <%= record.artist %></p>
+  <br>
+   <%= link_to image_tag(record.cover_art), record_path(record) %>
+<% end %>
